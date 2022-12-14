@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/texxtmid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="Empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmobile"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textgooglevoicenumber"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="120dp"
+        android:text="0208392732632"
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/imagecallicon"
+        app:layout_constraintTop_toBottomOf="@id/imageandriod" />
+
+    <TextView
+        android:id="@+id/textwork"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="133dp"
+
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="52dp"
+        android:text="textwork"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <TextView
+        android:id="@+id/textphonenumber"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:text="textphonenumber"
+
+
+        app:layout_constraintEnd_toEndOf="@id/textgoogevoice"
+        app:layout_constraintTop_toBottomOf="@id/textgoogevoice" />
+
+    <ImageView
+        android:id="@+id/imageandriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/download" />
+
+    <ImageView
+        android:id="@+id/imagestar"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.938"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"
+        app:srcCompat="@drawable/star" />
+
+
+    <ImageView
+        android:id="@+id/imagemail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="300dp"
+
+
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/textwork"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagecallicon"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/imagechat1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="51dp"
+
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/imagechat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textgoogevoice"
+        app:layout_constraintTop_toBottomOf="@+id/imagestar"
+        app:layout_constraintVertical_bias="0.084"
+        app:layout_editor_absoluteY="360dp"
+        app:srcCompat="@drawable/ic_baseline_chat_24"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imagechat2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textphonenumber"
+        app:layout_constraintTop_toBottomOf="@+id/imagechat1"
+        app:srcCompat="@drawable/ic_baseline_chat_24"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imagecallicon"
+        android:layout_width="24dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+
+
+        android:layout_marginTop="700dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/imagemail"
+
+        app:layout_constraintEnd_toStartOf="@id/textgooglevoicenumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_call_24"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textmobile"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="textmobile"
+
+        app:layout_constraintStart_toStartOf="@id/textphonenumber"
+        app:layout_constraintTop_toBottomOf="@id/textphonenumber" />
+
+    <TextView
+        android:id="@+id/textgoogevoice"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="textgooglevoice"
+        app:layout_constraintBottom_toTopOf="@+id/textmobile"
+        app:layout_constraintStart_toStartOf="@id/textgooglevoicenumber"
+        app:layout_constraintTop_toBottomOf="@id/textgooglevoicenumber"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="128dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textwork"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texxtmid" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
